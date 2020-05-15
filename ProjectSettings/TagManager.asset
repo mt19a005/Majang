@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameMaster
+  - HAI
+  - Tehai
   layers:
   - Default
   - TransparentFX

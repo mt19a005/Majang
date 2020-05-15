@@ -16,19 +16,18 @@ public class Hai : MonoBehaviour
     {
         gameMasterOBJ = GameObject.FindGameObjectWithTag("GameMaster");
         gameMaster = gameMasterOBJ.GetComponent<GameMaster>();
-        haiDictionary = gameMaster.haiDictionary;
-
     }
     void Start()
     {
+        haiDictionary = gameMaster.haiDictionary;
         while (true)
         {
             haiID = GenerateRandom();
-            
+
             if (haiDictionary.TakeHai(haiID) == "Take")
             {
                 //C
-                Debug.Log(haiID, gameObject);
+                //Debug.Log(haiID, gameObject);
                 break;
             }
         }
